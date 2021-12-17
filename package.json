@@ -1,7 +1,7 @@
 {
   "name": "clone-next-app",
   "version": "0.0.0",
-  "description": "",
+  "description": "clone base next-app",
   "repository": {
     "type": "git",
     "url": "https://github.com/bizhermit/clone-next-app.git"
