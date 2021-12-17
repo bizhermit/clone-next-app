@@ -36,6 +36,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 
+.vscode
 package-lock.json
 main
 src/.next
