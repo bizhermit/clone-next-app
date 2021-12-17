@@ -53,7 +53,7 @@
     "asar": true,
     "extends": null,
     "extraMetadata": {
-      "main": "main/src-electron/index.js"
+      "main": "main/src-nextron/index.js"
     },
     "files": [
       "main",
