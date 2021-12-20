@@ -1,7 +1,7 @@
 {
   "name": "clone-next-app",
   "version": "0.0.0",
-  "description": "clone base next-app",
+  "description": "clone base: next-app",
   "repository": {
     "type": "git",
     "url": "https://github.com/bizhermit/clone-next-app.git"
@@ -9,11 +9,8 @@
   "bugs": {
     "url": "https://github.com/bizhermit/clone-next-app/issues"
   },
-  "author": "bizhermit.com <support@bizhermit.com> (https://bizhermit.com)",
+  "author": "Ryoichi Senda (https://bizhermit.com)",
   "homepage": "https://bizhermit.com",
-  "contributors": [
-    "Ryoichi Senda <rsenda@bizhermit.com> (https://bizhermit.com)"
-  ],
   "license": "MIT",
   "private": true,
   "scripts": {
@@ -21,16 +18,17 @@
     "server": "npm run clean:next && npx tsc -p src-nexpress && node main/index.js -dev",
     "start": "npm run clean:next && npx tsc -p src-nexpress && npx tsc -p src && npx next build src && node main/index.js",
     "electron": "npm run clean:next && npx tsc -p src-nextron && npx electron main/src-nextron/index.js",
-    "pack:win": "npm run clean:next && npx rimraf build && npx license-checker --production > LICENSE && npx next build src && npx next export src && npx tsc -p src-nextron && electron-builder --win --dir",
+    "pack:win": "npm run clean:next && npx rimraf build && npx license-checker --production > AUTHORS && npx next build src && npx next export src && npx tsc -p src-nextron && electron-builder --win --dir",
     "pack": "npm run pack:win",
     "confirm:win": "npm run pack:win && .\\build\\win-unpacked\\clone-next-app.exe",
     "confirm": "npm run confirm:win",
-    "build:win": "npx rimraf build && npx license-checker --production > LICENSE && npx next build src && npx next export src && npx tsc -p src-nextron && electron-builder --win",
+    "build:win": "npx rimraf build && npx license-checker --production > AUTHORS && npx next build src && npx next export src && npx tsc -p src-nextron && electron-builder --win",
     "build": "npm run build:win"
   },
   "dependencies": {
-    "@bizhermit/nexpress": "^0.0.0",
-    "@bizhermit/nextron": "^0.0.0",
+    "@biz-hermit/nexpress": "^0.0.0",
+    "@biz-hermit/next-absorber": "^0.0.0",
+    "@biz-hermit/nextron": "^0.0.0",
     "electron-store": "^8.0.1",
     "next": "12.0.7",
     "react": "17.0.2",
@@ -63,6 +61,10 @@
       {
         "from": "LICENSE",
         "to": "LICENSE"
+      },
+      {
+        "from": "AUTHORS",
+        "to": "AUTHORS"
       },
       {
         "from": "src/i18n.json",
