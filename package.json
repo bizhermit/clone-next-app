@@ -29,7 +29,7 @@
     "@biz-hermit/nexpress": "^0.0.0",
     "@biz-hermit/next-absorber": "^0.0.0",
     "@biz-hermit/nextron": "^0.0.0",
-    "@biz-hermit/react-sdk": "^0.0.0",
+    "@biz-hermit/react-sdk": "^0.0.5",
     "electron-store": "^8.0.1",
     "next": "12.0.7",
     "react": "17.0.2",
