@@ -1,4 +1,3 @@
-import MessageBox from "@biz-hermit/react-sdk/dist/components/message-box";
 import GroupBox from "@biz-hermit/react-sdk/dist/containers/group-box";
 import Row from "@biz-hermit/react-sdk/dist/containers/row";
 import Button from "@biz-hermit/react-sdk/dist/controls/button";
