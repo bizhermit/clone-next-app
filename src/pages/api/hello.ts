@@ -1,4 +1,4 @@
-import ApiContext from "@biz-hermit/next-absorber/dist/api-context";
+import ApiContext from "@bizhermit/next-absorber/dist/api-context";
 import type { NextApiRequest, NextApiResponse } from "next";
 
 const handler = (req: NextApiRequest, res: NextApiResponse) => {

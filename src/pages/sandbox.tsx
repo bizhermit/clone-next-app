@@ -1,8 +1,8 @@
-import GroupBox from "@biz-hermit/react-sdk/dist/containers/group-box";
-import Row from "@biz-hermit/react-sdk/dist/containers/row";
-import Button from "@biz-hermit/react-sdk/dist/controls/button";
-import useMessageBox from "@biz-hermit/react-sdk/dist/hooks/message-box";
-import { StyleContext } from "@biz-hermit/react-sdk/dist/styles/style";
+import GroupBox from "@bizhermit/react-sdk/dist/containers/groupbox";
+import Row from "@bizhermit/react-sdk/dist/containers/row";
+import Button from "@bizhermit/react-sdk/dist/controls/button";
+import useMessageBox from "@bizhermit/react-sdk/dist/hooks/message-box";
+import { StyleContext } from "@bizhermit/react-sdk/dist/styles/style";
 import { NextPage } from "next";
 import Link from "next/link";
 import { useContext, VFC } from "react";

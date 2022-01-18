@@ -1,3 +1,3 @@
-import execute from "@biz-hermit/nextron";
+import execute from "@bizhermit/nextron";
 
 execute();
