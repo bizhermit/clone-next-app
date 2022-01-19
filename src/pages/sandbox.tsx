@@ -2,10 +2,10 @@ import GroupBox from "@bizhermit/react-sdk/dist/containers/groupbox";
 import Row from "@bizhermit/react-sdk/dist/containers/row";
 import Button from "@bizhermit/react-sdk/dist/controls/button";
 import useMessageBox from "@bizhermit/react-sdk/dist/hooks/message-box";
-import { StyleContext } from "@bizhermit/react-sdk/dist/styles/style";
+import { useLayout } from "@bizhermit/react-sdk/dist/layouts/style";
 import { NextPage } from "next";
 import Link from "next/link";
-import { useContext, VFC } from "react";
+import { VFC } from "react";
 
 const SandboxPage: NextPage = () => {
     return <SandboxComponent />;
@@ -14,7 +14,7 @@ const SandboxPage: NextPage = () => {
 export default SandboxPage;
 
 const SandboxComponent: VFC = () => {
-    const style = useContext(StyleContext);
+    const layout = useLayout();
     const msgbox = useMessageBox();
     return (
         <>
@@ -23,18 +23,18 @@ const SandboxComponent: VFC = () => {
         <Row>
             <GroupBox caption="color">
                 <Button click={() => {
-                    style.setColor(null);
+                    layout.setColor(null);
                 }}>unset</Button>
                 <Button click={() => {
-                    style.setColor("light");
+                    layout.setColor("light");
                 }}>Light</Button>
                 <Button click={() => {
-                    style.setColor("dark");
+                    layout.setColor("dark");
                 }}>Dark</Button>
             </GroupBox>
             <GroupBox caption="design">
                 <Button click={() => {
-                    style.setDesign(null);
+                    layout.setDesign(null);
                 }}>unset</Button>
                 <Button click={async (unlock) => {
                     // style.setDesign("flat");
@@ -42,10 +42,10 @@ const SandboxComponent: VFC = () => {
                     unlock();
                 }}>Flat</Button>
                 <Button click={() => {
-                    style.setDesign("material");
+                    layout.setDesign("material");
                 }}>Material</Button>
                 <Button click={() => {
-                    style.setDesign("neumorphism");
+                    layout.setDesign("neumorphism");
                 }}>Neumorphism</Button>
             </GroupBox>
         </Row>

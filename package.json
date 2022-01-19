@@ -1,6 +1,6 @@
 {
   "name": "clone-next-app",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "clone base: next-app",
   "repository": {
     "type": "git",
@@ -29,8 +29,8 @@
     "@bizhermit/basic-utils": "^1.0.0",
     "@bizhermit/nexpress": "^1.0.0",
     "@bizhermit/next-absorber": "^1.0.0",
-    "@bizhermit/nextron": "^1.0.0",
-    "@bizhermit/react-sdk": "^1.0.0",
+    "@bizhermit/nextron": "^1.0.1",
+    "@bizhermit/react-sdk": "^1.0.4",
     "next": "12.0.8",
     "react": "17.0.2",
     "react-dom": "17.0.2"
